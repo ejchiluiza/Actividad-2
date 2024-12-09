@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Usuarios Registrados</title>
+    <link rel="stylesheet" href="styles\styles.css">
+</head>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="funcionalidad.html">Funcionalidades</a></li>
+            <li><a href="registro.html">Registro</a></li>
+            <li><a href="tabla.html">Tabla</a></li>
+        </ul>
+    </nav>
+</header>
+<body>
+    <h1>Usuarios Registrados</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Cédula</th>
+                <th>Nombre</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Ciudad</th>
+            </tr>
+        </thead>
+        <tbody id="tabla-usuarios"></tbody>
+    </table>
+    <script>
+        const usuario = JSON.parse(localStorage.getItem("usuario"));
+        if (usuario) {
+            const tabla = document.getElementById("tabla-usuarios");
+            const fila = `<tr>
+                <td>${usuario.id}</td>
+                <td>${usuario.cedula}</td>
+                <td>${usuario.nombre}</td>
+                <td>${usuario.fecha}</td>
+                <td>${usuario.ciudad}</td>
+            </tr>`;
+            tabla.innerHTML = fila;
+        }
+    </script>
+</body>
+</html>
