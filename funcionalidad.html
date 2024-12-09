@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionalidades Lógicas</title>
+    <link rel="stylesheet" href="styles\styles.css">
+    <script src="scripts/funcionalidades.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="funcionalidad.html">Funcionalidades</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="tabla.html">Tabla</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Funcionalidades Lógicas</h1>
+
+        <!-- Comparar números -->
+        <section>
+            <h2>Comparar Números</h2>
+            <input type="number" id="num1" placeholder="Número 1">
+            <input type="number" id="num2" placeholder="Número 2">
+            <button onclick="compararNumeros()">Comparar</button>
+            <div id="resultado-if"></div>
+        </section>
+
+        <!-- Mostrar mes -->
+        <section>
+            <h2>Mostrar Mes</h2>
+            <label for="mes">Ingresa un número del 1 al 12:</label>
+            <input type="number" id="mes" min="1" max="12">
+            <button onclick="mostrarMes()">Mostrar Mes</button>
+            <div id="resultado"></div>
+        </section>
+
+        <!-- Gestión de nombres -->
+        <section>
+            <h2>Gestión de Nombres</h2>
+            <input type="text" id="nombre" placeholder="Nombre">
+            <button onclick="agregarNombre()">Agregar</button>
+            <ul id="lista-nombres"></ul>
+        </section>
+    </main>
+    <script src="funcionalidades.js" defer></script>
+</body>
+</html>
