@@ -1,3 +1,5 @@
 # Actividad-2
-Aplicación Tecnologias Web NCR 1382  /br/
-Para ejecutar la aplicación debemos iniciar el archivo index.html, en el cual se tiene un menu superior que lleva a la pagina de funcionalidades, registro y tabla de datos ingresados.
+
+Aplicación Tecnologías Web NCR 1382
+
+Para ejecutar la aplicación debemos iniciar el archivo `index.html`, en el cual se tiene un menú superior que lleva a la página de funcionalidades, registro y tabla de datos ingresados.
